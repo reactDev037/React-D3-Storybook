@@ -1,3 +1,4 @@
+sudo: false
 language: node_js
 node_js:
   - "node"
@@ -6,6 +7,8 @@ script:
   - yarn cover
 after_script:
   - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
+after_success:
+  - yarn release
 branches:
   only:
     - master

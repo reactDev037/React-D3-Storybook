@@ -1,12 +1,12 @@
 {
   "name": "finchart",
-  "version": "0.0.2",
+  "version": "0.0.0-development",
   "description": "react-d3 library offering high-performance and responsive solutoins for common use cases",
   "author": "Zhenyu Lin <zhenyu.lyn@gmail.com>",
   "homepage": "https://github.com/finbourne/finchart#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/finbourne/finchart.git"
+    "url": "https://github.com/finbourne/finchart.git"
   },
   "engines": {
     "node": ">=6.1.0"
@@ -14,8 +14,11 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "start": "",
+    "lint": "eslint",
     "test": "NODE_ENV=test jest",
-    "cover": "NODE_ENV=test jest --coverage"
+    "cover": "NODE_ENV=test jest --coverage",
+    "release": "semantic-release pre && npm publish && semantic-release post"
   },
   "jest": {
     "setupFiles": [
@@ -44,7 +47,8 @@
     "eslint-plugin-react": "7.0.1",
     "jest": "^20.0.4",
     "nodeman": "^1.1.2",
-    "react-addons-test-utils": "^15.5.1"
+    "react-addons-test-utils": "^15.5.1",
+    "semantic-release": "^6.3.6"
   },
   "dependencies": {
     "d3-axis": "^1.0.8",
