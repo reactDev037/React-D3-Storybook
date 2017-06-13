@@ -14,8 +14,8 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "cover": "jest --coverage"
+    "test": "NODE_ENV=test jest",
+    "cover": "NODE_ENV=test jest --coverage"
   },
   "jest": {
     "setupFiles": [
