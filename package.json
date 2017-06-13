@@ -14,7 +14,8 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "cover": "jest --coverage"
   },
   "jest": {
     "setupFiles": [
@@ -32,6 +33,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "coveralls": "^2.13.1",
     "enzyme": "^2.8.2",
     "enzyme-to-json": "^1.5.1",
     "eslint": "3.19",
