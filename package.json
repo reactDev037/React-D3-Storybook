@@ -17,7 +17,7 @@
     "start": "",
     "lint": "eslint",
     "test": "NODE_ENV=test jest",
-    "cover": "NODE_ENV=test jest --coverage",
+    "cover": "NODE_ENV=test jest --coverage --updateSnapshot",
     "release": "semantic-release pre && npm publish && semantic-release post"
   },
   "jest": {
