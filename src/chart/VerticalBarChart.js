@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import { scaleLinear, scaleBand } from 'd3-scale';
 import { max } from 'd3-array';
 
-import ChartBase from 'common/chart-lib/chart/ChartBase';
-import XAxis from 'common/chart-lib/axis/XAxis';
-import YAxis from 'common/chart-lib/axis/YAxis';
-import VerticalBarGroup from 'common/chart-lib/shape/VerticalBarGroup';
+import ChartBase from './ChartBase';
+import XAxis from '../axis/XAxis';
+import YAxis from '../axis/YAxis';
+import VerticalBarGroup from '../shape/VerticalBarGroup';
 
 /**
  * component:
