@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import moment from 'moment';
 
-import ResponsiveBarChart from '../chart/ResponsiveBarChart';
-import ResponsiveLineChart from '../chart/ResponsiveLineChart';
+import ResponsiveBarChart from 'common/chart-lib/chart/ResponsiveBarChart';
+import ResponsiveLineChart from 'common/chart-lib/chart/ResponsiveLineChart';
+import ResponsiveVerticalBarChart from 'common/chart-lib/chart/ResponsiveVerticalBarChart';
 
 function exampleBarChart() {
   const chartConfig = {
@@ -28,6 +29,30 @@ function exampleBarChart() {
     },
   };
   return <ResponsiveBarChart {...chartConfig} />;
+}
+
+function exampleRelativeBarChart() {
+  const chartConfig = {
+    // width: 640,
+    // height: 220,
+    data: [
+      { region: 'Nordic Countries', volume: 30 },
+      { region: 'Eastern Europe', volume: -20 },
+      { region: 'Latin America', volume: 40 },
+      { region: 'Asia', volume: -20 },
+      { region: 'Middle East', volume: -30 },
+      { region: 'Western Europe', volume: 40 },
+    ],
+    fields: {
+      x: 'volume',
+      y: 'region',
+    },
+    axisNames: {
+      x: 'Any X Name',
+      y: 'Any Y Name',
+    },
+  };
+  return <ResponsiveVerticalBarChart {...chartConfig} />;
 }
 
 function exampleLinearLineChart() {
@@ -108,6 +133,7 @@ export class ChartExample extends PureComponent {
     return (
       <div {...{ className }}>
         <div className="responsive">{exampleBarChart()}</div>
+        <div className="responsive">{exampleRelativeBarChart()}</div>
         <div className="responsive">{exampleLinearLineChart()}</div>
         <div className="responsive">{exampleTimeLineChart()}</div>
       </div>

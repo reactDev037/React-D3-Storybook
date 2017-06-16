@@ -12,9 +12,9 @@ const renderBarGroup = (className, input, xScale, yScale, height, barWidth) => (
       <rect
         key={d.x}
         x={xScale(d.x)}
-        y={yScale(d.y)}
+        y={d.y < 0 ? height : yScale(d.y)}
         width={barWidth}
-        height={height - yScale(d.y)}
+        height={Math.abs(height - yScale(d.y))}
       />
       ))}
   </g>

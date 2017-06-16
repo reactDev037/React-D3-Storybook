@@ -20,6 +20,8 @@ export class Component extends PureComponent {
     tickOffset: PropTypes.number,
     axisName: PropTypes.string,
     axisNameOffset: PropTypes.number,
+    transform: PropTypes.string,
+    notick: PropTypes.bool,
     // showGrid: PropTypes.bool,
   };
 
@@ -32,6 +34,8 @@ export class Component extends PureComponent {
     tickSizeOuter: 0,
     tickOffset: 5,
     axisNameOffset: 25,
+    transform: null,
+    notick: false,
     // showGrid: false, // TODO: support dashed grids
   };
 
@@ -49,12 +53,14 @@ export class Component extends PureComponent {
       tickOffset,
       axisName,
       axisNameOffset,
+      transform,
+      notick,
     } = this.props;
 
     const axis = axisLeft(yScale)
       .tickArguments(tickArguments)
       .ticks(tickArguments ? null : tickAmount)
-      .tickFormat(tickFormat)
+      .tickFormat(notick ? '' : tickFormat)
       .tickSize(tickSize)
       .tickSizeInner(tickSize ? null : tickSizeInner)
       .tickSizeOuter(tickSize ? null : tickSizeOuter)
@@ -62,6 +68,7 @@ export class Component extends PureComponent {
 
     const axisGroup = Faux.createElement('g');
     axisGroup.setAttribute('class', `yaxis-${className}`);
+    axisGroup.setAttribute('transform', transform);
 
     const label = Faux.createElement('text');
     label.setAttribute('class', 'axisName');

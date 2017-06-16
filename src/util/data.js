@@ -54,4 +54,3 @@ export function getType(d) {
   }
   return DATA_TYPES.default;
 }
-

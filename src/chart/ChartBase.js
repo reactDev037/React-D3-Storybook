@@ -10,6 +10,7 @@ export class Component extends PureComponent {
     className: PropTypes.string,
     width: PropTypes.number.isRequired,
     height: PropTypes.number.isRequired,
+    transform: PropTypes.string,
     children: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.node),
       PropTypes.node,
@@ -18,6 +19,7 @@ export class Component extends PureComponent {
 
   static defaultProps = {
     children: null,
+    transform: null,
   };
 
   render() {
@@ -25,10 +27,11 @@ export class Component extends PureComponent {
       className,
       width,
       height,
+      transform,
       children,
     } = this.props;
     return (
-      <svg {...{ className, width, height }}>
+      <svg {...{ className, width, height, transform }}>
         <rect className="background" {...{ width, height }} />
         {children}
       </svg>
@@ -42,7 +45,7 @@ export default styled(Component)`
   padding: ${prop => prop.padding || 60}px;
 
   > rect.background {
-    fill: lightblue;
+    fill: #e9e9eb;
     fill-opacity: 0.4;
   }
 `;
