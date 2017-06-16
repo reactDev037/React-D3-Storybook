@@ -2,7 +2,7 @@
 
 exports[`<LineChart /> handles data input format error 1`] = `
 <svg
-  class="sc-gzVnrw fgSTpW sc-bdVaJa gtUTv"
+  class="sc-gzVnrw fgSTpW sc-bdVaJa jgDyUg"
   height="320"
   width="960"
 >
@@ -161,7 +161,7 @@ exports[`<LineChart /> handles data input format error 1`] = `
 
 exports[`<LineChart /> renders linear data 1`] = `
 <svg
-  class="sc-gzVnrw fgSTpW sc-bdVaJa gtUTv"
+  class="sc-gzVnrw fgSTpW sc-bdVaJa jgDyUg"
   height="320"
   width="960"
 >
@@ -494,7 +494,7 @@ exports[`<LineChart /> renders linear data 1`] = `
 
 exports[`<LineChart /> renders time series data of moment date object 1`] = `
 <svg
-  class="sc-gzVnrw fgSTpW sc-bdVaJa gtUTv"
+  class="sc-gzVnrw fgSTpW sc-bdVaJa jgDyUg"
   height="320"
   width="960"
 >
@@ -929,7 +929,7 @@ exports[`<LineChart /> renders time series data of moment date object 1`] = `
 
 exports[`<LineChart /> renders time series data of native date object 1`] = `
 <svg
-  class="sc-gzVnrw fgSTpW sc-bdVaJa gtUTv"
+  class="sc-gzVnrw fgSTpW sc-bdVaJa jgDyUg"
   height="320"
   width="960"
 >
