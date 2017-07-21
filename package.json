@@ -16,6 +16,10 @@
     "release": "semantic-release pre && npm publish && semantic-release post"
   },
   "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/packages/"
+    ],
     "snapshotSerializers": [
       "<rootDir>/node_modules/enzyme-to-json/serializer"
     ]
