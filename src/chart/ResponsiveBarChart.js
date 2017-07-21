@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import autobind from 'autobind-decorator';
 import debounce from 'lodash.debounce';
 
 import BarChart from './BarChart';
@@ -34,11 +33,11 @@ export class Component extends PureComponent {
       height: 0,
     };
     const DEBOUNCE_TIME = 300;
-    this.debounceResize = debounce(this._resize, DEBOUNCE_TIME);
+    this.debounceResize = debounce(this._resize.bind(this), DEBOUNCE_TIME);
   }
 
   componentDidMount() {
-    this._resize();
+    this._resize().bind(this);
     window.addEventListener('resize', this.debounceResize, false);
   }
 
@@ -46,7 +45,6 @@ export class Component extends PureComponent {
     window.removeEventListener('resize', this.debounceResize, false);
   }
 
-  @autobind
   _resize() {
     if (this.container) {
       const { height, width } = this.container.getBoundingClientRect();

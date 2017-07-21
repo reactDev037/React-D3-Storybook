@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import autobind from 'autobind-decorator';
 import debounce from 'lodash.debounce';
 
 /**
@@ -32,19 +31,18 @@ export class Responsive extends PureComponent {
       height: 0,
     };
 
-    this.handleResize = debounce(this.resize, props.debounceTime);
+    this.handleResize = debounce(this.resize.bind(this), props.debounceTime);
   }
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize, false);
-    this.resize();
+    this.resize().bind(this);
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleResize, false);
   }
 
-  @autobind
   resize() {
     if (this.container) {
       const { height, width } = this.container.getBoundingClientRect();
