@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'enzyme';
 import { scaleLinear, scaleTime } from 'd3-scale';
 
-import XAxis from './XAxis';
+import XAxis from '../XAxis';
 
 describe('<XAxis />', () => {
   it('renders child tick elements correctly', () => {

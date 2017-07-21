@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'enzyme';
-import ChartBase from './ChartBase';
+import ChartBase from '../ChartBase';
 
 describe('<ChartBase />', () => {
   it('renders', () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { scaleLinear } from 'd3-scale';
 import { render } from 'enzyme';
-import BarGroup from './BarGroup';
+import BarGroup from '../BarGroup';
 
 describe('<BarGroup />', () => {
   it('handles data input format error', () => {

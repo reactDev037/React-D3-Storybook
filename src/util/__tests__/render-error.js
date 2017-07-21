@@ -1,4 +1,4 @@
-import renderError from './render-error';
+import renderError from '../render-error';
 
 describe('renderError', () => {
   it('renders', () => {

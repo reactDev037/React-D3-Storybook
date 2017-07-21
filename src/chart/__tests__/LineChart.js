@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import { render } from 'enzyme';
-import LineChart from './LineChart';
+import LineChart from '../LineChart';
 
 describe('<LineChart />', () => {
   it('renders linear data', () => {

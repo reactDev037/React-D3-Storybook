@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-import { createXScale, createYScale } from './scale';
+import { createXScale, createYScale } from '../scale';
 
 describe('createXScale', () => {
   it('create linear scale for number data', () => {

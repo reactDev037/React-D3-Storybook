@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'enzyme';
-import VerticalBarChart from './VerticalBarChart';
+import VerticalBarChart from '../VerticalBarChart';
 
 describe('<VerticalBarChart />', () => {
   it('renders', () => {

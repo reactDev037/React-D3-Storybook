@@ -1,7 +1,7 @@
 import React from 'react';
 import { scaleLinear } from 'd3-scale';
 import { render } from 'enzyme';
-import Area from './Area';
+import Area from '../Area';
 
 describe('<Area />', () => {
   it('handles data input format error', () => {

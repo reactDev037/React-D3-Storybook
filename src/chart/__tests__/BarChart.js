@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'enzyme';
-import BarChart from './BarChart';
+import BarChart from '../BarChart';
 
 describe('<BarChart />', () => {
   it('renders', () => {

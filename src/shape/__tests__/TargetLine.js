@@ -1,9 +1,9 @@
 import React from 'react';
 import { scaleLinear } from 'd3-scale';
 
-import Area from './Area';
+import TargetLine from '../TargetLine';
 
-describe('<Area />', () => {
+describe('<TargetLine />', () => {
   it('renders linear scale correctly');
 
   it('renders time scale correctly');

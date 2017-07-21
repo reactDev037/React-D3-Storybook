@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'enzyme';
 import { scaleLinear } from 'd3-scale';
 
-import YAxis from './YAxis';
+import YAxis from '../YAxis';
 
 describe('<YAxis />', () => {
   it('renders child tick elements', () => {

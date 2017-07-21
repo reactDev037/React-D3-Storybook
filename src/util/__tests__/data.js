@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-import { formatData, getType, DATA_TYPES } from './data';
+import { formatData, getType, DATA_TYPES } from '../data';
 
 describe('formatData', () => {
   it('map the data with keys in fields', () => {
