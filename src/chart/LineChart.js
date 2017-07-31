@@ -19,11 +19,17 @@ export class Component extends PureComponent {
     width: PropTypes.number.isRequired,
     height: PropTypes.number.isRequired,
     padding: PropTypes.number,
-    data: PropTypes.array.isRequired,
-    fields: PropTypes.object.isRequired,
+    data: PropTypes.arrayof(PropTypes.object).isRequired,
+    fields: PropTypes.shape({
+      x: PropTypes.string.isRequired,
+      y: PropTypes.string.isRequired,
+    }).isRequired,
     chartHeadroom: PropTypes.number,
-    targets: PropTypes.array,
-    axisNames: PropTypes.object,
+    axisNames: PropTypes.shape({
+      x: PropTypes.string,
+      y: PropTypes.string,
+    }),
+    targets: PropTypes.arrayof(PropTypes.object),
   };
 
   static defaultProps = {

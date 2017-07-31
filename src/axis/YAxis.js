@@ -12,7 +12,7 @@ export class Component extends PureComponent {
     yScale: PropTypes.func.isRequired,
     height: PropTypes.number.isRequired,
     tickAmount: PropTypes.number,
-    tickArguments: PropTypes.array,
+    tickArguments: PropTypes.arrayOf(PropTypes.any),
     tickFormat: PropTypes.func,
     tickSize: PropTypes.number,
     tickSizeInner: PropTypes.number,

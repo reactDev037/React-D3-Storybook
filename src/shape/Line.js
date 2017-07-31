@@ -11,8 +11,11 @@ export class Component extends PureComponent {
     className: PropTypes.string.isRequired,
     xScale: PropTypes.func.isRequired,
     yScale: PropTypes.func.isRequired,
-    data: PropTypes.array.isRequired,
-    fields: PropTypes.object.isRequired,
+    data: PropTypes.arrayof(PropTypes.object).isRequired,
+    fields: PropTypes.shape({
+      x: PropTypes.string.isRequired,
+      y: PropTypes.string.isRequired,
+    }).isRequired,
     // defined: PropTypes.array,
     // curve: PropTypes.string,
   };

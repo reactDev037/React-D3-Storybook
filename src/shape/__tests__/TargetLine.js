@@ -1,7 +1,7 @@
-import React from 'react';
-import { scaleLinear } from 'd3-scale';
+// import React from 'react';
+// import { scaleLinear } from 'd3-scale';
 
-import TargetLine from '../TargetLine';
+// import TargetLine from '../TargetLine';
 
 describe('<TargetLine />', () => {
   it('renders linear scale correctly');

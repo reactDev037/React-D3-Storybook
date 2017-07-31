@@ -9,11 +9,17 @@ export class Component extends PureComponent {
   static propTypes = {
     className: PropTypes.string.isRequired,
     padding: PropTypes.number,
-    data: PropTypes.array.isRequired,
-    fields: PropTypes.object.isRequired,
+    data: PropTypes.arrayof(PropTypes.object).isRequired,
+    fields: PropTypes.shape({
+      x: PropTypes.string.isRequired,
+      y: PropTypes.string.isRequired,
+    }).isRequired,
+    axisNames: PropTypes.shape({
+      x: PropTypes.string,
+      y: PropTypes.string,
+    }),
     chartHeadroom: PropTypes.number,
-    targets: PropTypes.array,
-    axisNames: PropTypes.object,
+    targets: PropTypes.arrayof(PropTypes.object),
   };
 
   static defaultProps = {
@@ -32,11 +38,11 @@ export class Component extends PureComponent {
       height: 0,
     };
     const DEBOUNCE_TIME = 300;
-    this.debounceResize = debounce(this._resize.bind(this), DEBOUNCE_TIME);
+    this.debounceResize = debounce(this.resize.bind(this), DEBOUNCE_TIME);
   }
 
   componentDidMount() {
-    this._resize().bind(this);
+    this.resize().bind(this);
     window.addEventListener('resize', this.debounceResize, false);
   }
 
@@ -44,7 +50,7 @@ export class Component extends PureComponent {
     window.removeEventListener('resize', this.debounceResize, false);
   }
 
-  _resize() {
+  resize() {
     if (this.container) {
       const { height, width } = this.container.getBoundingClientRect();
       this.setState({ width, height });

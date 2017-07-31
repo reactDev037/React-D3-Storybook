@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import moment from 'moment';
 
-import ResponsiveBarChart from 'common/chart-lib/chart/ResponsiveBarChart';
-import ResponsiveLineChart from 'common/chart-lib/chart/ResponsiveLineChart';
-import ResponsiveVerticalBarChart from 'common/chart-lib/chart/ResponsiveVerticalBarChart';
+import ResponsiveBarChart from '../chart/ResponsiveBarChart';
+import ResponsiveLineChart from '../chart/ResponsiveLineChart';
+import ResponsiveVerticalBarChart from '../chart/ResponsiveVerticalBarChart';
 
 function exampleBarChart() {
   const chartConfig = {

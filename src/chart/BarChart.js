@@ -20,9 +20,15 @@ export class Component extends PureComponent {
     padding: PropTypes.number,
     barGroupPadding: PropTypes.number,
     barGroupHeadroom: PropTypes.number,
-    data: PropTypes.array.isRequired,
-    fields: PropTypes.object.isRequired,
-    axisNames: PropTypes.object,
+    data: PropTypes.arrayof(PropTypes.object).isRequired,
+    fields: PropTypes.shape({
+      x: PropTypes.string.isRequired,
+      y: PropTypes.string.isRequired,
+    }).isRequired,
+    axisNames: PropTypes.shape({
+      x: PropTypes.string,
+      y: PropTypes.string,
+    }),
   };
 
   static defaultProps = {
