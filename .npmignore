@@ -1,4 +1,6 @@
+# development
 src/
+index.js
 
 # dot files
 .babelrc
