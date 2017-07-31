@@ -145,7 +145,6 @@ export class ChartExample extends PureComponent {
 export default styled(ChartExample)`
   position: relative;
   width: 100%;
-  height: 960px;
 
   .responsive {
     position: relative;
