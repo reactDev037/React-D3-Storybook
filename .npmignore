@@ -10,6 +10,6 @@ index.js
 .travis.yml
 yarn.lock
 
-# temporary
+# lerna
 packages/
 lerna.json
