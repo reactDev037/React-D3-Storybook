@@ -19,7 +19,7 @@ export class Component extends PureComponent {
     width: PropTypes.number.isRequired,
     height: PropTypes.number.isRequired,
     padding: PropTypes.number,
-    data: PropTypes.arrayof(PropTypes.object).isRequired,
+    data: PropTypes.arrayOf(PropTypes.object).isRequired,
     fields: PropTypes.shape({
       x: PropTypes.string.isRequired,
       y: PropTypes.string.isRequired,
@@ -29,7 +29,7 @@ export class Component extends PureComponent {
       x: PropTypes.string,
       y: PropTypes.string,
     }),
-    targets: PropTypes.arrayof(PropTypes.object),
+    targets: PropTypes.arrayOf(PropTypes.object),
   };
 
   static defaultProps = {

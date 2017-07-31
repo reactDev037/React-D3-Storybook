@@ -29,7 +29,7 @@ export class Component extends PureComponent {
     padding: PropTypes.number,
     headroom: PropTypes.number,
     barGroupPadding: PropTypes.number,
-    data: PropTypes.arrayof(PropTypes.object).isRequired,
+    data: PropTypes.arrayOf(PropTypes.object).isRequired,
     fields: PropTypes.shape({
       x: PropTypes.string.isRequired,
       y: PropTypes.string.isRequired,

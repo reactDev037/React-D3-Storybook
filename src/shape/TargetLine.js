@@ -9,7 +9,7 @@ export class Component extends PureComponent {
     xScale: PropTypes.func.isRequired,
     yScale: PropTypes.func.isRequired,
     height: PropTypes.number.isRequired,
-    targets: PropTypes.arrayof(PropTypes.object),
+    targets: PropTypes.arrayOf(PropTypes.object),
   };
 
   static defaultProps = {

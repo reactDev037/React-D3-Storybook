@@ -9,7 +9,7 @@ export class Component extends PureComponent {
   static propTypes = {
     className: PropTypes.string.isRequired,
     padding: PropTypes.number,
-    data: PropTypes.arrayof(PropTypes.object).isRequired,
+    data: PropTypes.arrayOf(PropTypes.object).isRequired,
     fields: PropTypes.shape({
       x: PropTypes.string.isRequired,
       y: PropTypes.string.isRequired,
@@ -19,7 +19,7 @@ export class Component extends PureComponent {
       y: PropTypes.string,
     }),
     chartHeadroom: PropTypes.number,
-    targets: PropTypes.arrayof(PropTypes.object),
+    targets: PropTypes.arrayOf(PropTypes.object),
   };
 
   static defaultProps = {
@@ -38,11 +38,11 @@ export class Component extends PureComponent {
       height: 0,
     };
     const DEBOUNCE_TIME = 300;
-    this.debounceResize = debounce(this.resize.bind(this), DEBOUNCE_TIME);
+    this.debounceResize = debounce(() => this.resize(), DEBOUNCE_TIME);
   }
 
   componentDidMount() {
-    this.resize().bind(this);
+    this.resize();
     window.addEventListener('resize', this.debounceResize, false);
   }
 

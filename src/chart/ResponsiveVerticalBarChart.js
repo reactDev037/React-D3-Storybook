@@ -11,7 +11,7 @@ export class Component extends PureComponent {
     padding: PropTypes.number,
     barGroupPadding: PropTypes.number,
     barGroupHeadroom: PropTypes.number,
-    data: PropTypes.arrayof(PropTypes.object).isRequired,
+    data: PropTypes.arrayOf(PropTypes.object).isRequired,
     fields: PropTypes.shape({
       x: PropTypes.string.isRequired,
       y: PropTypes.string.isRequired,
@@ -39,11 +39,11 @@ export class Component extends PureComponent {
       height: 0,
     };
     const DEBOUNCE_TIME = 300;
-    this.debounceResize = debounce(this.resize.bind(this), DEBOUNCE_TIME);
+    this.debounceResize = debounce(() => this.resize(), DEBOUNCE_TIME);
   }
 
   componentDidMount() {
-    this.resize().bind(this);
+    this.resize();
     window.addEventListener('resize', this.debounceResize, false);
   }
 
@@ -54,10 +54,7 @@ export class Component extends PureComponent {
   resize() {
     if (this.container) {
       const { height, width } = this.container.getBoundingClientRect();
-      this.setState({
-        width,
-        height,
-      });
+      this.setState({ width, height });
     }
   }
 
