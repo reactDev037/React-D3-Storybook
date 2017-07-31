@@ -1,0 +1,13 @@
+src/
+
+# dot files
+.babelrc
+.npmignore
+.eslintignore
+.eslintrc.yml
+.travis.yml
+yarn.lock
+
+# temporary
+packages/
+lerna.json
