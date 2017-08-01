@@ -1,0 +1,28 @@
+{
+  "name": "finchart-util",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "repository": "https://github.com/finbourne/finchart.git",
+  "author": "Zhenyu Lin",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && babel src -d dist --ignore **/__tests__/*.js",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1"
+  },
+  "dependencies": {
+    "d3-array": "^1.2.0",
+    "d3-scale": "^1.0.6",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1"
+  }
+}

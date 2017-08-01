@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renderError renders 1`] = `
+<text>
+  Input Data Format Error
+</text>
+`;

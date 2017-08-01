@@ -17,4 +17,3 @@ stories
 # lerna
 packages/
 lerna.json
-lerna-debug.log
