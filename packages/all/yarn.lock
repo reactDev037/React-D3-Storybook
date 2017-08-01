@@ -1003,9 +1003,9 @@ fill-range@^2.1.0:
     repeat-element "^1.1.2"
     repeat-string "^1.5.2"
 
-finchart-axis@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/finchart-axis/-/finchart-axis-0.0.2.tgz#7dce88a3d6eb07251ecdcb1b37ec826db9502775"
+finchart-axis@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/finchart-axis/-/finchart-axis-0.1.0.tgz#fe4262c1f72b801e0b0a08c86d35231c9ca53717"
   dependencies:
     d3-axis "^1.0.8"
     d3-selection "^1.1.0"
@@ -1014,13 +1014,23 @@ finchart-axis@^0.0.2:
     react-faux-dom "^4.0.3"
     styled-components "^2.0.1"
 
-finchart-chart@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/finchart-chart/-/finchart-chart-0.0.4.tgz#9b9e0b5940f90f5cf00a3ceca95ed34de44f59a3"
+finchart-chart@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/finchart-chart/-/finchart-chart-0.1.0.tgz#2ce5472db49949583468e8884cb48654dff22caf"
   dependencies:
-    finchart-axis "^0.0.2"
+    finchart-axis "^0.1.0"
     finchart-shape "^0.0.4"
     finchart-util "^0.0.4"
+    prop-types "^15.5.10"
+    react "^15.6.1"
+    styled-components "^2.0.1"
+
+finchart-example@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/finchart-example/-/finchart-example-0.1.0.tgz#9207a642ed6d97612b03263d944afe93fb1b72a6"
+  dependencies:
+    finchart-chart "^0.1.0"
+    moment "^2.18.1"
     prop-types "^15.5.10"
     react "^15.6.1"
     styled-components "^2.0.1"

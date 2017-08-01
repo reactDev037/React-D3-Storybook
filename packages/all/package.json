@@ -21,6 +21,7 @@
   "dependencies": {
     "finchart-axis": "^0.1.0",
     "finchart-chart": "^0.1.0",
+    "finchart-example": "^0.1.0",
     "finchart-shape": "^0.0.4",
     "finchart-util": "^0.0.4"
   }
