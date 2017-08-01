@@ -57,7 +57,12 @@ export class Responsive extends PureComponent {
     // const { width, height } = this.state;
     const { className, children } = this.props;
     return (
-      <div ref={(ref) => { this.container = ref; }} {...{ className }}>
+      <div
+        ref={ref => {
+          this.container = ref;
+        }}
+        {...{ className }}
+      >
         {children}
       </div>
     );

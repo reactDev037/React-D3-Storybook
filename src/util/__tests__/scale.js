@@ -31,7 +31,10 @@ describe('createXScale', () => {
     };
     const width = 320;
     const xScale = createXScale(data, fields, width);
-    const domain = [moment('2017-02-01').toDate(), moment('2017-02-07').toDate()];
+    const domain = [
+      moment('2017-02-01').toDate(),
+      moment('2017-02-07').toDate(),
+    ];
     expect(xScale.domain()).toEqual(domain);
     expect(xScale.range()).toEqual([0, width]);
   });

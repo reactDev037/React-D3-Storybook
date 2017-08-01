@@ -12,22 +12,14 @@ export class Component extends PureComponent {
     targets: PropTypes.arrayOf(PropTypes.object),
   };
 
-  static defaultProps = {
-
-  };
+  static defaultProps = {};
 
   render() {
-    const {
-      className,
-      xScale,
-      yScale,
-      height,
-      targets,
-    } = this.props;
+    const { className, xScale, yScale, height, targets } = this.props;
 
     let data = targets.map(d => [
-        { x: d.start, y: d.target },
-        { x: d.end, y: d.target },
+      { x: d.start, y: d.target },
+      { x: d.end, y: d.target },
     ]);
 
     // TODO: add data format check
@@ -39,9 +31,7 @@ export class Component extends PureComponent {
     };
 
     // TODO: add label
-    return (
-      <Line {...{ className, xScale, yScale, height, data, fields }} />
-    );
+    return <Line {...{ className, xScale, yScale, height, data, fields }} />;
   }
 }
 

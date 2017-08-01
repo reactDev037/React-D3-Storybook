@@ -27,7 +27,9 @@ describe('<XAxis />', () => {
     const width = 900;
     const height = 360;
     const xScale = scaleLinear().range([0, width]).domain([0, 100]);
-    const axis = render(<XAxis {...{ xScale, width, height }} axisName="axisName" />);
+    const axis = render(
+      <XAxis {...{ xScale, width, height }} axisName="axisName" />,
+    );
     const ticks = axis.find('.axisName');
     expect(ticks).toMatchSnapshot();
   });

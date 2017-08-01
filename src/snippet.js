@@ -17,7 +17,7 @@ export class Component extends PureComponent {
     const { foo } = this.props;
     return (
       <div {...{ className }}>
-        { foo }
+        {foo}
       </div>
     );
   }

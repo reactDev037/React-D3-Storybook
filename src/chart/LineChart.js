@@ -36,7 +36,8 @@ export class Component extends PureComponent {
     padding: 60,
     chartHeadroom: 0.2,
     axisNames: {
-      x: null, y: null,
+      x: null,
+      y: null,
     },
   };
 
@@ -57,7 +58,9 @@ export class Component extends PureComponent {
 
     return (
       <ChartBase {...{ className, width, height, padding }}>
-        {targets ? <TargetLine {...{ height, width, xScale, yScale, targets }} /> : null}
+        {targets
+          ? <TargetLine {...{ height, width, xScale, yScale, targets }} />
+          : null}
         <AreaLine {...{ height, width, xScale, yScale, data, fields }} />
         <XAxis {...{ height, width, xScale }} axisName={axisNames.x} />
         <YAxis {...{ height, width, yScale }} axisName={axisNames.y} />

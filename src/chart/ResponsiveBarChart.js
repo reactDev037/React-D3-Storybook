@@ -66,7 +66,12 @@ export class Component extends PureComponent {
     width = width > 0 ? width : 0;
     height = height > 0 ? height : 0;
     return (
-      <div {...{ className }} ref={(ref) => { this.container = ref; }}>
+      <div
+        {...{ className }}
+        ref={ref => {
+          this.container = ref;
+        }}
+      >
         <BarChart {...{ width, height, padding }} {...barChartProps} />
       </div>
     );

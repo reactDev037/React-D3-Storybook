@@ -116,8 +116,7 @@ export class ChartExample extends PureComponent {
     className: PropTypes.string,
   };
 
-  static defaultProps = {
-  };
+  static defaultProps = {};
 
   componentWillMount() {
     // window.performance.mark('App');
@@ -132,10 +131,18 @@ export class ChartExample extends PureComponent {
 
     return (
       <div {...{ className }}>
-        <div className="responsive">{exampleBarChart()}</div>
-        <div className="responsive">{exampleRelativeBarChart()}</div>
-        <div className="responsive">{exampleLinearLineChart()}</div>
-        <div className="responsive">{exampleTimeLineChart()}</div>
+        <div className="responsive">
+          {exampleBarChart()}
+        </div>
+        <div className="responsive">
+          {exampleRelativeBarChart()}
+        </div>
+        <div className="responsive">
+          {exampleLinearLineChart()}
+        </div>
+        <div className="responsive">
+          {exampleTimeLineChart()}
+        </div>
       </div>
     );
   }

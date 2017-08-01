@@ -37,14 +37,11 @@ export class Component extends PureComponent {
       // curve,
     } = this.props;
     const input = formatData(data, fields);
-    const path = area()
-      .x(d => xScale(d.x))
-      .y1(d => yScale(d.y))
-      .y0(height);
+    const path = area().x(d => xScale(d.x)).y1(d => yScale(d.y)).y0(height);
 
-    return (
-      input ? <path className={`area-${className}`} d={path(input)} /> : renderError()
-    );
+    return input
+      ? <path className={`area-${className}`} d={path(input)} />
+      : renderError();
   }
 }
 

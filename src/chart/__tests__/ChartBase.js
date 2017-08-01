@@ -12,7 +12,5 @@ describe('<ChartBase />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders children elements', () => {
-
-  });
+  it('renders children elements', () => {});
 });

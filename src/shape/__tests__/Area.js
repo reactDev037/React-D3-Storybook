@@ -18,7 +18,9 @@ describe('<Area />', () => {
       x: 'volume',
       y: 'price',
     };
-    const wrapper = render(<Area {...{ height, width, xScale, yScale, data, fields }} />);
+    const wrapper = render(
+      <Area {...{ height, width, xScale, yScale, data, fields }} />,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -36,7 +38,9 @@ describe('<Area />', () => {
       x: 'supply',
       y: 'price',
     };
-    const wrapper = render(<Area {...{ height, width, xScale, yScale, data, fields }} />);
+    const wrapper = render(
+      <Area {...{ height, width, xScale, yScale, data, fields }} />,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 

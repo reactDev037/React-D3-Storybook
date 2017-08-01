@@ -18,7 +18,9 @@ describe('<BarGroup />', () => {
       x: 'volume',
       y: 'price',
     };
-    const wrapper = render(<BarGroup {...{ height, width, xScale, yScale, data, fields }} />);
+    const wrapper = render(
+      <BarGroup {...{ height, width, xScale, yScale, data, fields }} />,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -36,7 +38,9 @@ describe('<BarGroup />', () => {
       x: 'supply',
       y: 'price',
     };
-    const wrapper = render(<BarGroup {...{ height, width, xScale, yScale, data, fields }} />);
+    const wrapper = render(
+      <BarGroup {...{ height, width, xScale, yScale, data, fields }} />,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 

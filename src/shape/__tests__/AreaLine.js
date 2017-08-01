@@ -18,7 +18,9 @@ describe('<AreaLine />', () => {
       x: 'volume',
       y: 'price',
     };
-    const wrapper = render(<AreaLine {...{ height, width, xScale, yScale, data, fields }} />);
+    const wrapper = render(
+      <AreaLine {...{ height, width, xScale, yScale, data, fields }} />,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -36,7 +38,9 @@ describe('<AreaLine />', () => {
       x: 'supply',
       y: 'price',
     };
-    const wrapper = render(<AreaLine {...{ height, width, xScale, yScale, data, fields }} />);
+    const wrapper = render(
+      <AreaLine {...{ height, width, xScale, yScale, data, fields }} />,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 

@@ -66,7 +66,10 @@ export class Component extends PureComponent {
 
     const label = Faux.createElement('text');
     label.setAttribute('class', 'axisName');
-    label.setAttribute('transform', `translate(${width / 2}, ${axisNameOffset})`);
+    label.setAttribute(
+      'transform',
+      `translate(${width / 2}, ${axisNameOffset})`,
+    );
     label.innerHTML = axisName;
     axisGroup.appendChild(label);
 

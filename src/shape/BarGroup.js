@@ -6,19 +6,21 @@ import { formatData } from '../util/data';
 import renderError from '../util/render-error';
 
 // TODO: error handling of repeated d.x value in the data set
-const renderBarGroup = (className, input, xScale, yScale, height, barWidth) => (
-  <g className={`bargroup-${className}`} transform={`translate(${-barWidth / 2},0)`}>
-    {input.map(d => (
+const renderBarGroup = (className, input, xScale, yScale, height, barWidth) =>
+  <g
+    className={`bargroup-${className}`}
+    transform={`translate(${-barWidth / 2},0)`}
+  >
+    {input.map(d =>
       <rect
         key={d.x}
         x={xScale(d.x)}
         y={d.y < 0 ? height : yScale(d.y)}
         width={barWidth}
         height={Math.abs(height - yScale(d.y))}
-      />
-      ))}
-  </g>
-);
+      />,
+    )}
+  </g>;
 
 export class Component extends PureComponent {
   static propTypes = {

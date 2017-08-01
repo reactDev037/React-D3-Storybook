@@ -72,7 +72,10 @@ export class Component extends PureComponent {
 
     const label = Faux.createElement('text');
     label.setAttribute('class', 'axisName');
-    label.setAttribute('transform', `translate(-${axisNameOffset}, ${height / 2}) rotate(270)`);
+    label.setAttribute(
+      'transform',
+      `translate(-${axisNameOffset}, ${height / 2}) rotate(270)`,
+    );
     label.innerHTML = axisName;
     axisGroup.appendChild(label);
 

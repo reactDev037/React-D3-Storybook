@@ -5,9 +5,20 @@ import styled from 'styled-components';
 import { formatData } from '../util/data';
 import renderError from '../util/render-error';
 
-const renderBarGroup = (className, input, xScale, yScale, width, barHeight, nolabel) => (
-  <g className={`bargroup-${className}`} transform={`translate(0, ${-barHeight / 2})`}>
-    {input.map((d) => {
+const renderBarGroup = (
+  className,
+  input,
+  xScale,
+  yScale,
+  width,
+  barHeight,
+  nolabel,
+) =>
+  <g
+    className={`bargroup-${className}`}
+    transform={`translate(0, ${-barHeight / 2})`}
+  >
+    {input.map(d => {
       const zeroPosition = xScale(0);
       const negative = d.x < 0;
       const key = d.y;
@@ -16,24 +27,39 @@ const renderBarGroup = (className, input, xScale, yScale, width, barHeight, nola
       const barClassName = negative ? 'negative' : null;
       const barWidth = Math.abs(zeroPosition - xScale(d.x));
       return (
-        <rect {...{ key, x, y, className: barClassName, width: barWidth, height: barHeight }} />
+        <rect
+          {...{
+            key,
+            x,
+            y,
+            className: barClassName,
+            width: barWidth,
+            height: barHeight,
+          }}
+        />
       );
     })}
-    {nolabel ? null : input.map((d) => {
-      const zeroPosition = xScale(0);
-      const negative = d.x < 0;
-      const key = d.y;
-      const x = zeroPosition;
-      const y = yScale(d.y);
-      const textClassName = negative ? 'negative' : null;
-      const dx = negative ? 5 : -5;
-      const dy = (barHeight / 2) + 1;
-      return (
-        <text {...{ key, x, y, dx, dy, className: textClassName }} alignmentBaseline="middle">{d.y}</text>
-      );
-    })}
-  </g>
-);
+    {nolabel
+      ? null
+      : input.map(d => {
+          const zeroPosition = xScale(0);
+          const negative = d.x < 0;
+          const key = d.y;
+          const x = zeroPosition;
+          const y = yScale(d.y);
+          const textClassName = negative ? 'negative' : null;
+          const dx = negative ? 5 : -5;
+          const dy = barHeight / 2 + 1;
+          return (
+            <text
+              {...{ key, x, y, dx, dy, className: textClassName }}
+              alignmentBaseline="middle"
+            >
+              {d.y}
+            </text>
+          );
+        })}
+  </g>;
 
 export class Component extends PureComponent {
   static propTypes = {
@@ -67,7 +93,15 @@ export class Component extends PureComponent {
       nolabel,
     } = this.props;
     const input = formatData(data, fields);
-    const barGroupParam = [className, input, xScale, yScale, width, barHeight, nolabel];
+    const barGroupParam = [
+      className,
+      input,
+      xScale,
+      yScale,
+      width,
+      barHeight,
+      nolabel,
+    ];
     return input ? renderBarGroup(...barGroupParam) : renderError();
   }
 }

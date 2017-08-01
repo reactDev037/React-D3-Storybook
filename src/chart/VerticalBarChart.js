@@ -67,11 +67,16 @@ export class Component extends PureComponent {
     const xDomain = [-xDomainAbs, xDomainAbs];
     const yData = data.map(d => d[fields.y]);
     const xScale = scaleLinear().domain(xDomain).range([0, width]);
-    const yScale = scaleBand().domain(yData).range([0, height]).padding(barGroupPadding);
+    const yScale = scaleBand()
+      .domain(yData)
+      .range([0, height])
+      .padding(barGroupPadding);
     const transform = `translate(${xScale(0)}, 0)`;
     return (
       <ChartBase {...{ className, width, height, padding }}>
-        <text className="yAxisName" dy={-8} {...{ transform }}>{axisNames.y}</text>
+        <text className="yAxisName" dy={-8} {...{ transform }}>
+          {axisNames.y}
+        </text>
         <VerticalBarGroup {...{ width, xScale, yScale, data, fields }} />
         <XAxis {...{ height, width, xScale }} axisName={axisNames.x} />
         <YAxis {...{ height, width, yScale, transform }} notick />

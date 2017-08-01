@@ -23,13 +23,7 @@ export class Component extends PureComponent {
   };
 
   render() {
-    const {
-      className,
-      width,
-      height,
-      transform,
-      children,
-    } = this.props;
+    const { className, width, height, transform, children } = this.props;
     return (
       <svg {...{ className, width, height, transform }}>
         <rect className="background" {...{ width, height }} />

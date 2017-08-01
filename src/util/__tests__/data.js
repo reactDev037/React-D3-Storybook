@@ -13,11 +13,7 @@ describe('formatData', () => {
       x: 'volume',
       y: 'price',
     };
-    const expected = [
-      { x: 23, y: 21 },
-      { x: 25, y: 39 },
-      { x: 38, y: 30 },
-    ];
+    const expected = [{ x: 23, y: 21 }, { x: 25, y: 39 }, { x: 38, y: 30 }];
     const formatted = formatData(data, fields);
     expect(formatted).toEqual(expected);
   });

@@ -18,7 +18,9 @@ describe('<Line />', () => {
       x: 'volume',
       y: 'price',
     };
-    const wrapper = render(<Line {...{ height, width, xScale, yScale, data, fields }} />);
+    const wrapper = render(
+      <Line {...{ height, width, xScale, yScale, data, fields }} />,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -36,11 +38,13 @@ describe('<Line />', () => {
       x: 'supply',
       y: 'price',
     };
-    const wrapper = render(<Line {...{ height, width, xScale, yScale, data, fields }} />);
+    const wrapper = render(
+      <Line {...{ height, width, xScale, yScale, data, fields }} />,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
   it('handles missing data properly');
 
-  it('handles partial data key pollution');  // TODO: using tickArguments
+  it('handles partial data key pollution'); // TODO: using tickArguments
 });

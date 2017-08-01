@@ -37,13 +37,11 @@ export class Component extends PureComponent {
 
     const input = formatData(data, fields);
 
-    const path = line()
-      .x(d => xScale(d.x))
-      .y(d => yScale(d.y));
+    const path = line().x(d => xScale(d.x)).y(d => yScale(d.y));
 
-    return (
-      input ? <path className={`line-${className}`} d={path(input)} /> : renderError()
-    );
+    return input
+      ? <path className={`line-${className}`} d={path(input)} />
+      : renderError();
   }
 }
 
