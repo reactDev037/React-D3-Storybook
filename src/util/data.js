@@ -1,5 +1,15 @@
 // @flow
+
 import moment from 'moment';
+
+type Fields = {
+  x: string,
+  y: string,
+};
+
+type Data = Array<{
+  [key: string]: any,
+}>;
 
 /**
  * map the keys of the data according to the provided fields and handle common errors
@@ -8,7 +18,7 @@ import moment from 'moment';
  * @return {Array}        formatted output
  * @return {undefined}        in case of error
  */
-export function formatData(data, fields) {
+export function formatData(data: Data, fields: Fields) {
   const { x, y } = fields;
   const output = [];
   for (let i = 0; i < data.length; i += 1) {
@@ -38,7 +48,7 @@ export const DATA_TYPES = {
  * @param  {anything} d the data to be checked
  * @return {string}   the data type enumeration
  */
-export function getType(d) {
+export function getType(d: any) {
   if (d instanceof Date && typeof d.getMonth === 'function') {
     return DATA_TYPES.date;
   }

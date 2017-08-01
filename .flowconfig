@@ -7,9 +7,10 @@
 .*/.dist/*.
 
 [libs]
-./flow-typed
+<PROJECT_ROOT>/flow-typed/
 
 [options]
 module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=.
 
 [lints]
