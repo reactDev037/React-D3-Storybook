@@ -13,7 +13,9 @@
     "test": "NODE_ENV=test jest",
     "cover": "NODE_ENV=test jest --coverage --updateSnapshot",
     "build": "rm -rf dist && babel src -d dist --ignore **/__tests__/*.js",
-    "release": "semantic-release pre && npm publish && semantic-release post"
+    "release": "semantic-release pre && npm publish && semantic-release post",
+    "storybook": "start-storybook -p 3000",
+    "build-storybook": "build-storybook"
   },
   "jest": {
     "testPathIgnorePatterns": [
@@ -52,7 +54,8 @@
     "lerna": "^2.0.0",
     "prettier": "^1.5.3",
     "react-test-renderer": "^15.6.1",
-    "semantic-release": "^6.3.6"
+    "semantic-release": "^6.3.6",
+    "@storybook/react": "^3.2.0"
   },
   "dependencies": {
     "d3-axis": "^1.0.8",
