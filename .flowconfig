@@ -1,0 +1,15 @@
+[include]
+.*/src/*.
+
+[ignore]
+.*/node_modules/*.
+.*/.build/*.
+.*/.dist/*.
+
+[libs]
+./flow-typed
+
+[options]
+module.system.node.resolve_dirname=node_modules
+
+[lints]
