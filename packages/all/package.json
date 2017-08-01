@@ -1,6 +1,6 @@
 {
-  "name": "finchart-axis",
-  "version": "0.0.2",
+  "name": "finchart",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "repository": "https://github.com/finbourne/finchart.git",
   "author": "Zhenyu Lin",
@@ -19,8 +19,8 @@
     "babel-preset-react": "^6.24.1"
   },
   "dependencies": {
-    "finchart-axis": "^0.0.2",
-    "finchart-chart": "^0.0.4",
+    "finchart-axis": "^0.1.0",
+    "finchart-chart": "^0.1.0",
     "finchart-shape": "^0.0.4",
     "finchart-util": "^0.0.4"
   }
