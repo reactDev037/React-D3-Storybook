@@ -2445,7 +2445,7 @@ d3-selection@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/d3-selection/-/d3-selection-1.1.0.tgz#1998684896488f839ca0372123da34f1d318809c"
 
-d3-shape@^1.2.0:
+d3-shape@^1.0.8, d3-shape@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/d3-shape/-/d3-shape-1.2.0.tgz#45d01538f064bafd05ea3d6d2cb748fd8c41f777"
   dependencies:
@@ -3396,6 +3396,39 @@ finalhandler@~1.0.3:
     parseurl "~1.3.1"
     statuses "~1.3.1"
     unpipe "~1.0.0"
+
+finchart-axis@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/finchart-axis/-/finchart-axis-0.0.2.tgz#7dce88a3d6eb07251ecdcb1b37ec826db9502775"
+  dependencies:
+    d3-axis "^1.0.8"
+    d3-selection "^1.1.0"
+    prop-types "^15.5.10"
+    react "^15.6.1"
+    react-faux-dom "^4.0.3"
+    styled-components "^2.0.1"
+
+finchart-shape@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/finchart-shape/-/finchart-shape-0.0.3.tgz#f07962f964c318cd38005194a09cd582e58f145b"
+  dependencies:
+    d3-selection "^1.1.0"
+    d3-shape "^1.0.8"
+    finchart-util "^0.0.2"
+    prop-types "^15.5.10"
+    react "^15.6.1"
+    react-faux-dom "^4.0.3"
+    styled-components "^2.0.1"
+
+finchart-util@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/finchart-util/-/finchart-util-0.0.2.tgz#d71993234fc537c102e4887054d821c68ad70380"
+  dependencies:
+    d3-array "^1.2.0"
+    d3-scale "^1.0.6"
+    moment "^2.18.1"
+    prop-types "^15.5.10"
+    react "^15.6.1"
 
 find-cache-dir@^1.0.0:
   version "1.0.0"
