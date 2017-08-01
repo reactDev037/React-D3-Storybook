@@ -2,7 +2,7 @@
 
 exports[`<VerticalBarChart /> handles data input format error 1`] = `
 <svg
-  class="sc-ifAKCX buPUHa sc-bdVaJa jgDyUg"
+  class="sc-bwzfXH fpXFlR sc-bdVaJa jgDyUg"
   height="320"
   width="960"
 >
@@ -20,7 +20,7 @@ exports[`<VerticalBarChart /> handles data input format error 1`] = `
     Input Data Format Error
   </text>
   <g
-    class="xaxis-sc-bwzfXH fjjIqd"
+    class="xaxis-sc-bdVaJa dITaRN"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -38,7 +38,7 @@ exports[`<VerticalBarChart /> handles data input format error 1`] = `
     />
   </g>
   <g
-    class="yaxis-sc-htpNat jpKklr"
+    class="yaxis-sc-bwzfXH fjjIqd"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -120,7 +120,7 @@ exports[`<VerticalBarChart /> handles data input format error 1`] = `
 
 exports[`<VerticalBarChart /> renders 1`] = `
 <svg
-  class="sc-ifAKCX buPUHa sc-bdVaJa jgDyUg"
+  class="sc-bwzfXH fpXFlR sc-bdVaJa jgDyUg"
   height="220"
   width="640"
 >
@@ -137,7 +137,7 @@ exports[`<VerticalBarChart /> renders 1`] = `
     Any Y Name
   </text>
   <g
-    class="bargroup-sc-bxivhb djSFBb"
+    class="bargroup-sc-EHOje ftTVGe"
     transform="translate(0, -10)"
   >
     <rect
@@ -238,7 +238,7 @@ exports[`<VerticalBarChart /> renders 1`] = `
     </text>
   </g>
   <g
-    class="xaxis-sc-bwzfXH fjjIqd"
+    class="xaxis-sc-bdVaJa dITaRN"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -411,7 +411,7 @@ exports[`<VerticalBarChart /> renders 1`] = `
     </g>
   </g>
   <g
-    class="yaxis-sc-htpNat jpKklr"
+    class="yaxis-sc-bwzfXH fjjIqd"
     fill="none"
     font-family="sans-serif"
     font-size="10"

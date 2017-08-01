@@ -6,7 +6,7 @@
   "author": "Zhenyu Lin",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && babel src -d dist --ignore **/__tests__/*.js",
+    "build": "rm -rf dist && babel src -d dist --ignore /__tests__/",
     "prepublish": "npm run build"
   },
   "devDependencies": {

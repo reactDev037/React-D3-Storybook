@@ -851,7 +851,7 @@ d3-color@1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-1.0.3.tgz#bc7643fca8e53a8347e2fbdaffa236796b58509b"
 
-d3-format@1:
+d3-format@1, d3-format@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/d3-format/-/d3-format-1.2.0.tgz#6b480baa886885d4651dc248a8f4ac9da16db07a"
 
@@ -1003,38 +1003,41 @@ fill-range@^2.1.0:
     repeat-element "^1.1.2"
     repeat-string "^1.5.2"
 
-finchart-axis@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/finchart-axis/-/finchart-axis-0.1.0.tgz#fe4262c1f72b801e0b0a08c86d35231c9ca53717"
+finchart-axis@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/finchart-axis/-/finchart-axis-0.1.1.tgz#58d6229088392e622303a6146a486ce694510466"
   dependencies:
     d3-axis "^1.0.8"
+    d3-format "^1.2.0"
     d3-selection "^1.1.0"
     prop-types "^15.5.10"
     react "^15.6.1"
     react-faux-dom "^4.0.3"
     styled-components "^2.0.1"
 
-finchart-shape@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/finchart-shape/-/finchart-shape-0.0.4.tgz#2b89f925d0ed7259f78720c61134386b579f7769"
+finchart-shape@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/finchart-shape/-/finchart-shape-0.1.1.tgz#f43f8a1f07e7caeca3e0f5f5dc118bc4b1d9c37b"
   dependencies:
     d3-selection "^1.1.0"
     d3-shape "^1.0.8"
-    finchart-util "^0.0.4"
+    finchart-util "^0.1.1"
     prop-types "^15.5.10"
     react "^15.6.1"
     react-faux-dom "^4.0.3"
     styled-components "^2.0.1"
 
-finchart-util@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/finchart-util/-/finchart-util-0.0.4.tgz#e6f5625e332db7f906f029450f754819171c1b09"
+finchart-util@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/finchart-util/-/finchart-util-0.1.1.tgz#78f6a01dcf46a7010017f11fcdc175fbc89899cd"
   dependencies:
     d3-array "^1.2.0"
     d3-scale "^1.0.6"
+    lodash.debounce "^4.0.8"
     moment "^2.18.1"
     prop-types "^15.5.10"
     react "^15.6.1"
+    styled-components "^2.1.1"
 
 for-in@^1.0.1:
   version "1.0.2"
@@ -1856,7 +1859,7 @@ style-attr@^1.0.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/style-attr/-/style-attr-1.3.0.tgz#2c1997a4865e25d7dbcb216be0ad715f005b9b17"
 
-styled-components@^2.0.1:
+styled-components@^2.0.1, styled-components@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.1.1.tgz#7e9b5bc319ee3963b47aebb74f4658119ea9d484"
   dependencies:

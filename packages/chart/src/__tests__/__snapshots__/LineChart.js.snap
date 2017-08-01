@@ -2,7 +2,7 @@
 
 exports[`<LineChart /> handles data input format error 1`] = `
 <svg
-  class="sc-gzVnrw fgSTpW sc-bdVaJa jgDyUg"
+  class="sc-bwzfXH bFHdpU sc-bdVaJa jgDyUg"
   height="320"
   width="960"
 >
@@ -12,7 +12,7 @@ exports[`<LineChart /> handles data input format error 1`] = `
     width="960"
   />
   <g
-    class="arealine-sc-EHOje kSzTaY"
+    class="arealine-sc-htpNat hHtpcc"
   >
     <text>
       Input Data Format Error
@@ -22,7 +22,7 @@ exports[`<LineChart /> handles data input format error 1`] = `
     </text>
   </g>
   <g
-    class="xaxis-sc-bwzfXH fjjIqd"
+    class="xaxis-sc-bdVaJa dITaRN"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -55,7 +55,7 @@ exports[`<LineChart /> handles data input format error 1`] = `
     </g>
   </g>
   <g
-    class="yaxis-sc-htpNat jpKklr"
+    class="yaxis-sc-bwzfXH fjjIqd"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -161,7 +161,7 @@ exports[`<LineChart /> handles data input format error 1`] = `
 
 exports[`<LineChart /> renders linear data 1`] = `
 <svg
-  class="sc-gzVnrw fgSTpW sc-bdVaJa jgDyUg"
+  class="sc-bwzfXH bFHdpU sc-bdVaJa jgDyUg"
   height="320"
   width="960"
 >
@@ -171,19 +171,19 @@ exports[`<LineChart /> renders linear data 1`] = `
     width="960"
   />
   <g
-    class="arealine-sc-EHOje kSzTaY"
+    class="arealine-sc-htpNat hHtpcc"
   >
     <path
-      class="line-sc-bxivhb eWgptY"
+      class="line-sc-bwzfXH QEHSS"
       d="M0,260L96,120L384,253.33333333333331L480,53.333333333333314L960,120"
     />
     <path
-      class="area-sc-ifAKCX jATdPh"
+      class="area-sc-bdVaJa lmOAOE"
       d="M0,260L96,120L384,253.33333333333331L480,53.333333333333314L960,120L960,320L480,320L384,320L96,320L0,320Z"
     />
   </g>
   <g
-    class="xaxis-sc-bwzfXH fjjIqd"
+    class="xaxis-sc-bdVaJa dITaRN"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -388,7 +388,7 @@ exports[`<LineChart /> renders linear data 1`] = `
     </g>
   </g>
   <g
-    class="yaxis-sc-htpNat jpKklr"
+    class="yaxis-sc-bwzfXH fjjIqd"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -494,7 +494,7 @@ exports[`<LineChart /> renders linear data 1`] = `
 
 exports[`<LineChart /> renders time series data of moment date object 1`] = `
 <svg
-  class="sc-gzVnrw fgSTpW sc-bdVaJa jgDyUg"
+  class="sc-dnqmqq hJxOZJ sc-htoDjs ciehLT"
   height="320"
   width="960"
 >
@@ -504,19 +504,19 @@ exports[`<LineChart /> renders time series data of moment date object 1`] = `
     width="960"
   />
   <g
-    class="arealine-sc-EHOje kSzTaY"
+    class="arealine-sc-ifAKCX bmKgXx"
   >
     <path
       class="line-sc-bxivhb eWgptY"
       d="M0,120L433.5483870967742,186.66666666666666L960,53.333333333333314"
     />
     <path
-      class="area-sc-ifAKCX jATdPh"
+      class="area-sc-htpNat cZuuQf"
       d="M0,120L433.5483870967742,186.66666666666666L960,53.333333333333314L960,320L433.5483870967742,320L0,320Z"
     />
   </g>
   <g
-    class="xaxis-sc-bwzfXH fjjIqd"
+    class="xaxis-sc-bdVaJa dITaRN"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -823,7 +823,7 @@ exports[`<LineChart /> renders time series data of moment date object 1`] = `
     </g>
   </g>
   <g
-    class="yaxis-sc-htpNat jpKklr"
+    class="yaxis-sc-bwzfXH fjjIqd"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -929,7 +929,7 @@ exports[`<LineChart /> renders time series data of moment date object 1`] = `
 
 exports[`<LineChart /> renders time series data of native date object 1`] = `
 <svg
-  class="sc-gzVnrw fgSTpW sc-bdVaJa jgDyUg"
+  class="sc-bwzfXH bFHdpU sc-bdVaJa jgDyUg"
   height="320"
   width="960"
 >
@@ -939,19 +939,19 @@ exports[`<LineChart /> renders time series data of native date object 1`] = `
     width="960"
   />
   <g
-    class="arealine-sc-EHOje kSzTaY"
+    class="arealine-sc-htpNat hHtpcc"
   >
     <path
-      class="line-sc-bxivhb eWgptY"
+      class="line-sc-bwzfXH QEHSS"
       d="M0,120L433.5483870967742,186.66666666666666L960,53.333333333333314"
     />
     <path
-      class="area-sc-ifAKCX jATdPh"
+      class="area-sc-bdVaJa lmOAOE"
       d="M0,120L433.5483870967742,186.66666666666666L960,53.333333333333314L960,320L433.5483870967742,320L0,320Z"
     />
   </g>
   <g
-    class="xaxis-sc-bwzfXH fjjIqd"
+    class="xaxis-sc-bdVaJa dITaRN"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -1258,7 +1258,7 @@ exports[`<LineChart /> renders time series data of native date object 1`] = `
     </g>
   </g>
   <g
-    class="yaxis-sc-htpNat jpKklr"
+    class="yaxis-sc-bwzfXH fjjIqd"
     fill="none"
     font-family="sans-serif"
     font-size="10"

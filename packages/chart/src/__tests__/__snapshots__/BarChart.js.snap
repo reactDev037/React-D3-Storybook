@@ -2,7 +2,7 @@
 
 exports[`<BarChart /> handles data input format error 1`] = `
 <svg
-  class="sc-ifAKCX bmKgXx sc-bdVaJa jgDyUg"
+  class="sc-bwzfXH bFHdpU sc-bdVaJa jgDyUg"
   height="320"
   width="960"
 >
@@ -15,7 +15,7 @@ exports[`<BarChart /> handles data input format error 1`] = `
     Input Data Format Error
   </text>
   <g
-    class="xaxis-sc-bwzfXH fjjIqd"
+    class="xaxis-sc-bdVaJa dITaRN"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -48,7 +48,7 @@ exports[`<BarChart /> handles data input format error 1`] = `
     </g>
   </g>
   <g
-    class="yaxis-sc-htpNat jpKklr"
+    class="yaxis-sc-bwzfXH fjjIqd"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -154,7 +154,7 @@ exports[`<BarChart /> handles data input format error 1`] = `
 
 exports[`<BarChart /> renders 1`] = `
 <svg
-  class="sc-ifAKCX bmKgXx sc-bdVaJa jgDyUg"
+  class="sc-bwzfXH bFHdpU sc-bdVaJa jgDyUg"
   height="320"
   width="960"
 >
@@ -205,7 +205,7 @@ exports[`<BarChart /> renders 1`] = `
     />
   </g>
   <g
-    class="xaxis-sc-bwzfXH fjjIqd"
+    class="xaxis-sc-bdVaJa dITaRN"
     fill="none"
     font-family="sans-serif"
     font-size="10"
@@ -325,7 +325,7 @@ exports[`<BarChart /> renders 1`] = `
     </g>
   </g>
   <g
-    class="yaxis-sc-htpNat jpKklr"
+    class="yaxis-sc-bwzfXH fjjIqd"
     fill="none"
     font-family="sans-serif"
     font-size="10"
