@@ -1,40 +1,20 @@
-import XAxis from './axis/XAxis';
-import YAxis from './axis/YAxis';
+export XAxis from './axis/XAxis';
+export YAxis from './axis/YAxis';
 
-import Area from './shape/Area';
-import AreaLine from './shape/AreaLine';
-import BarGroup from './shape/BarGroup';
-import Line from './shape/Line';
-import TargetLine from './shape/TargetLine';
-import VerticalBarGroup from './shape/VerticalBarGroup';
+export Area from './shape/Area';
+export AreaLine from './shape/AreaLine';
+export BarGroup from './shape/BarGroup';
+export Line from './shape/Line';
+export TargetLine from './shape/TargetLine';
+export VerticalBarGroup from './shape/VerticalBarGroup';
 
-import ChartBase from './chart/ChartBase';
-import BarChart from './chart/BarChart';
-import LineChart from './chart/LineChart';
-import MultiBarChart from './chart/MultiBarChart';
-import MultiLineChart from './chart/MultiLineChart';
-import ResponsiveBarChart from './chart/ResponsiveBarChart';
-import ResponsiveLineChart from './chart/ResponsiveLineChart';
-import ResponsiveVerticalBarChart from './chart/ResponsiveVerticalBarChart';
+export ChartBase from './chart/ChartBase';
+export BarChart from './chart/BarChart';
+export LineChart from './chart/LineChart';
+export MultiBarChart from './chart/MultiBarChart';
+export MultiLineChart from './chart/MultiLineChart';
+export ResponsiveBarChart from './chart/ResponsiveBarChart';
+export ResponsiveLineChart from './chart/ResponsiveLineChart';
+export ResponsiveVerticalBarChart from './chart/ResponsiveVerticalBarChart';
 
-import ChartExample from './example/ChartExample';
-
-module.exports = {
-  XAxis,
-  YAxis,
-  Area,
-  AreaLine,
-  BarGroup,
-  Line,
-  TargetLine,
-  VerticalBarGroup,
-  ChartBase,
-  BarChart,
-  LineChart,
-  MultiBarChart,
-  MultiLineChart,
-  ResponsiveBarChart,
-  ResponsiveLineChart,
-  ResponsiveVerticalBarChart,
-  ChartExample,
-};
+export ChartExample from './example/ChartExample';
