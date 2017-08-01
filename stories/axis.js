@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, number } from '@storybook/addon-knobs';
 import { scaleLinear, scaleTime } from 'd3-scale';
 
-import { XAxis } from 'finchart-axis';
+import { XAxis } from 'finchart';
 import { ChartBase } from 'finchart-chart';
 
 const xAxisStories = storiesOf('XAxis', module);
