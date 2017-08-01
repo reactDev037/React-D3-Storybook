@@ -1,15 +1,7 @@
 // @flow
 
 import moment from 'moment';
-
-type Fields = {
-  x: string,
-  y: string,
-};
-
-type Data = Array<{
-  [key: string]: any,
-}>;
+import type { Data, Fields } from '../types';
 
 /**
  * map the keys of the data according to the provided fields and handle common errors
