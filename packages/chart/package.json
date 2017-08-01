@@ -22,6 +22,7 @@
     "finchart-axis": "^0.1.0",
     "finchart-shape": "^0.0.4",
     "finchart-util": "^0.0.4",
+    "lodash.debounce": "^4.0.8",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "styled-components": "^2.0.1"
