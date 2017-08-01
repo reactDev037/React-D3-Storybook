@@ -1,6 +1,6 @@
 {
   "name": "finchart-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "repository": "https://github.com/finbourne/finchart.git",
   "author": "Zhenyu Lin",
@@ -19,7 +19,7 @@
     "babel-preset-react": "^6.24.1"
   },
   "dependencies": {
-    "finchart-chart": "^0.1.0",
+    "finchart-chart": "^0.1.1",
     "moment": "^2.18.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
