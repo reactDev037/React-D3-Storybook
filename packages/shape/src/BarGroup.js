@@ -2,8 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { formatData } from '../util/data';
-import renderError from '../util/render-error';
+import { formatData, renderError } from 'finchart-util';
 
 // TODO: error handling of repeated d.x value in the data set
 const renderBarGroup = (className, input, xScale, yScale, height, barWidth) =>

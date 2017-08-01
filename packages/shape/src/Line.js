@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { line } from 'd3-shape';
 
-import { formatData } from '../util/data';
-import renderError from '../util/render-error';
+import { formatData, renderError } from 'finchart-util';
 
 export class Component extends PureComponent {
   static propTypes = {

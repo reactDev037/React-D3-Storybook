@@ -21,6 +21,7 @@
   "dependencies": {
     "d3-selection": "^1.1.0",
     "d3-shape": "^1.0.8",
+    "finchart-util": "^0.0.2",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-faux-dom": "^4.0.3",

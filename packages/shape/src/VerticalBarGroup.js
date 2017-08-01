@@ -2,8 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { formatData } from '../util/data';
-import renderError from '../util/render-error';
+import { formatData, renderError } from 'finchart-util';
 
 const renderBarGroup = (
   className,
