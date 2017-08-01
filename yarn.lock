@@ -3408,21 +3408,32 @@ finchart-axis@^0.0.2:
     react-faux-dom "^4.0.3"
     styled-components "^2.0.1"
 
-finchart-shape@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/finchart-shape/-/finchart-shape-0.0.3.tgz#f07962f964c318cd38005194a09cd582e58f145b"
+finchart-chart@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/finchart-chart/-/finchart-chart-0.0.4.tgz#9b9e0b5940f90f5cf00a3ceca95ed34de44f59a3"
+  dependencies:
+    finchart-axis "^0.0.2"
+    finchart-shape "^0.0.4"
+    finchart-util "^0.0.4"
+    prop-types "^15.5.10"
+    react "^15.6.1"
+    styled-components "^2.0.1"
+
+finchart-shape@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/finchart-shape/-/finchart-shape-0.0.4.tgz#2b89f925d0ed7259f78720c61134386b579f7769"
   dependencies:
     d3-selection "^1.1.0"
     d3-shape "^1.0.8"
-    finchart-util "^0.0.2"
+    finchart-util "^0.0.4"
     prop-types "^15.5.10"
     react "^15.6.1"
     react-faux-dom "^4.0.3"
     styled-components "^2.0.1"
 
-finchart-util@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/finchart-util/-/finchart-util-0.0.2.tgz#d71993234fc537c102e4887054d821c68ad70380"
+finchart-util@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/finchart-util/-/finchart-util-0.0.4.tgz#e6f5625e332db7f906f029450f754819171c1b09"
   dependencies:
     d3-array "^1.2.0"
     d3-scale "^1.0.6"

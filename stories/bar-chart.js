@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, number, array, object } from '@storybook/addon-knobs';
 
-import { BarChart } from '../src';
+import { BarChart } from 'finchart-chart';
 
 storiesOf('BarChart', module)
   .addDecorator(withKnobs)

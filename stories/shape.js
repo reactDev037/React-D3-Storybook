@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { scaleLinear } from 'd3-scale';
 import { Line } from 'finchart-shape';
-import { ChartBase } from '../src';
+import { ChartBase } from 'finchart-chart';
 
 storiesOf('Line', module).add('standard', () => {
   const width = 960;
