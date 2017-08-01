@@ -19,6 +19,8 @@
     "babel-preset-react": "^6.24.1"
   },
   "dependencies": {
+    "d3-array": "^1.2.0",
+    "d3-scale": "^1.0.6",
     "finchart-axis": "^0.1.0",
     "finchart-shape": "^0.0.4",
     "finchart-util": "^0.0.4",
