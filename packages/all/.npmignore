@@ -1,0 +1,19 @@
+# development
+src/
+index.js
+
+# dot files
+.babelrc
+.npmignore
+.eslintignore
+.eslintrc.yml
+.travis.yml
+yarn.lock
+
+# storybook
+stories
+.storybook
+
+# lerna
+packages/
+lerna.json
