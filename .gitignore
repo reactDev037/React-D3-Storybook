@@ -10,8 +10,8 @@ docker_compose/
 data/
 
 # dist files
-dist/
-lib/
+**/dist/
+**/lib/
 
 # dot file
 .DS_Store
