@@ -26,8 +26,10 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-info": "^3.2.0",
     "@storybook/addon-knobs": "^3.2.0",
-    "@storybook/react": "^3.2.0",
+    "@storybook/addon-storyshots": "^3.2.3",
+    "@storybook/react": "^3.2.3",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -37,7 +39,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "coveralls": "^2.13.1",
-    "enzyme": "^2.8.2",
+    "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
     "eslint": "3.19",
     "eslint-config-airbnb": "^15.0.1",
