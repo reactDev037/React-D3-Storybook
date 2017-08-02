@@ -15,7 +15,7 @@
     "flow-watch": "flow-watch --ignore node_modules/ --watch *.js --watch .flowconfig",
     "test": "NODE_ENV=test jest",
     "cover": "NODE_ENV=test jest --coverage --updateSnapshot",
-    "release": "semantic-release pre && npm publish && semantic-release post"
+    "release": "lerna-semantic-release pre && lerna-semantic-release perform && lerna-semantic-release post"
   },
   "jest": {
     "testPathIgnorePatterns": [
@@ -39,6 +39,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "coveralls": "^2.13.1",
+    "cz-lerna-changelog": "^1.2.1",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
     "eslint": "3.19",
@@ -71,5 +72,10 @@
     "finchart-shape": "^0.0.4",
     "moment": "^2.18.1",
     "react-dom": "^15.6.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   }
 }
