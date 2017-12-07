@@ -3,8 +3,8 @@
   "version": "0.0.7",
   "description": "react-d3 library offering high-performance and responsive solutoins for common use cases",
   "author": "Zhenyu Lin <zhenyu.lyn@gmail.com>",
-  "repository": "https://github.com/finbourne/finchart.git",
-  "homepage": "https://github.com/finbourne/finchart#readme",
+  "repository": "https://github.com/zhenyulin/finchart.git",
+  "homepage": "https://github.com/zhenyulin/finchart#readme",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "flow-watch": "flow-watch --ignore node_modules/ --watch *.js --watch .flowconfig",
     "test": "NODE_ENV=test jest",
     "cover": "NODE_ENV=test jest --coverage --updateSnapshot",
-    "release": "lerna-semantic-release pre && lerna-semantic-release perform && lerna-semantic-release post"
+    "release": "semantic-release pre && npm publish && semantic-release post"
   },
   "jest": {
     "testPathIgnorePatterns": [
@@ -58,6 +58,7 @@
     "flow-bin": "^0.50.0",
     "flow-watch": "^1.1.1",
     "jest": "^20.0.4",
+    "jest-styled-components": "^4.3.0",
     "lerna": "^2.0.0",
     "prettier": "^1.5.3",
     "react-test-renderer": "^15.6.1",

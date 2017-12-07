@@ -2,7 +2,7 @@
   "name": "finchart-chart",
   "version": "0.1.1",
   "main": "dist/index.js",
-  "repository": "https://github.com/finbourne/finchart.git",
+  "repository": "https://github.com/zhenyulin/finchart.git",
   "author": "Zhenyu Lin",
   "license": "MIT",
   "scripts": {
