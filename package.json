@@ -1,10 +1,10 @@
 {
-  "name": "finchart",
+  "name": "React-D3-Storybook",
   "version": "0.0.7",
   "description": "react-d3 library offering high-performance and responsive solutoins for common use cases",
-  "author": "Zhenyu Lin <zhenyu.lyn@gmail.com>",
-  "repository": "https://github.com/zhenyulin/finchart.git",
-  "homepage": "https://github.com/zhenyulin/finchart#readme",
+  "author": "reactDev037 <reactDev037@gmail.com>",
+  "repository": "https://github.com/reactDev037/React-D3-Storybook.git",
+  "homepage": "https://github.com/reactDev037/React-D3-Storybook#readme",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
